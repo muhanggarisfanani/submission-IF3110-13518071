@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Risfanani's</title>
+	<link rel="icon" href="img/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+	<header id="page-top">
+		<nav>
+			<a href="#page-top"><img src="img/logo.png" alt="logo"></a>
+			<ul>
+				<li><a href="#me">Me</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#calc">Features</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main id="me">
+		<section class="intro">
+			<h1>I'm Muhammad Angga Risfanani</h1>
+			<p id="typing-desc">Programmer and Developer</p>
+		</section>
+		<section>
+			<article id="feature">
+				<a href="#calc"><h2><img src="img/icon/calculator.png" alt="calculator">Kalkulator-ku</h2></a>
+				
+				<a href="https://s.id/risfanani" target="_blank"><h2><img src="img/icon/blog.png" alt="blog">Blog-ku</h2></a>
+				
+				<a href="https://risfanani.my.id" target="_blank"><h2><img src="img/icon/portfolio.png" alt="portfolio">Portofolio-ku</h2></a>
+				
+				<a href="https://google.com" target="_blank"><h2><img src="img/icon/google.png" alt="google">Google.com</h2></a>
+				
+				<a href="https://bing.com" target="_blank"><h2><img src="img/icon/bing.png" alt="bing">Bing.com</h2></a>
+				
+				<a href="https://proddux.id" target="_blank"><h2><img src="img/icon/web.png" alt="web">Proddux.id</h2></a>
+				
+				<a href="https://risfanani.com" target="_blank"><h2><img src="img/icon/web.png" alt="web">Risfanani.com</h2></a>
+			</article>
+			<aside id="about">
+				<h1>Tentang saya</h1>
+				<img src="img/profilephoto.png" alt="Profile Photo">
+				<p>Nama : Muhammad Angga Risfanani<br>
+				muhanggarisfanani1@gmail.com</p>
+			</aside>
+		</section>
+		<section id="calc" class="calculator">
+			<div class="calculator-title">
+				<h1>Kalkulator-ku</h1>
+				<div class="line-mf"></div>
+			</div>
+			<div class="calculator-app">
+				<div class="flex-container-column">
+					<div class="resultDisplay">
+						<h1 id="displayNumber">0</h1>
+					</div>
+					<div class="flex-container-row">
+						<div class="button clear">C</div>
+						<div class="button backspace">&lt</div>
+						<div class="button percent">%</div>
+						<div class="button operator divide">&divide</div>
+					</div>
+					<div class="flex-container-row">
+						<div class="button-number">7</div>
+						<div class="button-number">8</div>
+						<div class="button-number">9</div>
+						<div class="button operator times">&times</div>
+					</div>
+					<div class="flex-container-row">
+						<div class="button-number">4</div>
+						<div class="button-number">5</div>
+						<div class="button-number">6</div>
+						<div class="button operator">-</div>
+					</div>
+					<div class="flex-container-row">
+						<div class="button-number">1</div>
+						<div class="button-number">2</div>
+						<div class="button-number">3</div>
+						<div class="button operator">+</div>
+					</div>
+					<div class="flex-container-row">
+						<div class="button">.</div>
+						<div class="button-number">0</div>
+						<div class="button equals">=</div>
+						<div class="button operator">^</div>
+					</div>
+				</div>
+				<div class="history card">
+					<table>
+						<tbody id="historyList">
+							<!--DIISI DENGAN RIWAYAT PERHITUNGAN-->
+						</tbody>
+					</table>
+				</div>
+				<div class="clear-his">Hapus riwayat</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy <strong>Risfanani's</strong> 2020</p>
+	</footer>
+
+	<script src="assets/typing.js"></script>
+	<script src="assets/calculator.js"></script>
+	<script src="assets/calculate-his.js"></script>
+</body>
+
+</html>

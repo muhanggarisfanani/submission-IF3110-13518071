@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Josefin+Sans:wght@700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+html {
+	scroll-behavior: smooth;
+	background-color: #cccccc;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	display: inline;
+}
+
+nav {
+	background-color: #2d2d2d;
+	padding: 16px 64px;
+	position: sticky;
+	top: 0;
+}
+
+nav a {
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	text-decoration: none;
+	vertical-align: middle;
+	transition: 500ms;
+}
+
+nav a:hover {
+	color: gray;
+	transition: 500ms;
+	font-size: 18px;
+}
+
+nav a:active {
+	color: white;
+}
+
+nav img {
+	height: 40px;
+	border-radius: 50%;
+	transition: 500ms;
+}
+
+nav img:hover {
+	height: 64px;
+	border-radius: 25%;
+	transition: 500ms;
+}
+
+nav ul {
+	display: inline;
+}
+
+nav li {
+	display: inline;
+	list-style-image: none;
+	padding: 0 0 0 20px;
+}
+
+main {
+	padding: 20px 160px;
+	overflow: auto;
+}
+
+.intro {
+	font-family: 'Lobster', cursive;
+	font-size: 32px;
+	text-align: center;
+	vertical-align: middle;
+	height: 300px;
+	color: #cccccc;
+	margin: 64px auto;
+	padding: 16px;
+	box-sizing: border-box;
+	background-image: url("../img/intro-bg.gif");
+	border-radius: 10px;
+	transition: 250ms ease;
+}
+
+.intro:hover {
+	box-shadow: 0 0 8px 8px #2d2d2d;
+	transition: 250ms ease;
+}
+
+aside {
+	font-family: 'Comfortaa', cursive;
+	color: gray;
+	padding: 16px;
+	float: left;
+	width: 33.33%;
+	background-color: #2d2d2d;
+	border-radius: 25px;
+	box-shadow: 0 0 8px 0 gray;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+aside h1 {
+	font-family: 'Lobster', cursive;
+	color: gray;
+	font-size: 24px;
+}
+
+aside img {
+	width: 50%;
+	transition: 500ms;
+}
+
+aside:hover img {
+	width: 45%;
+	transition: 500ms;
+}
+
+aside p {
+	transition: 500ms;
+	border-radius: 15px;
+}
+
+aside:hover p {
+	padding: 8px 0;
+	background-color: gray;
+	color: #2d2d2d;
+	transition: 500ms;
+	border-radius: 25px;
+}
+
+article {
+	font-family: 'Comfortaa', cursive;
+	font-size: 12px;
+	padding: 0 0 0 64px;
+	float: right;
+	width: 66.67%;
+	box-sizing: border-box;
+}
+
+article img {
+	height: 15px;
+	padding: 0 8px 0 0;
+}
+
+article a {
+	color:#2d2d2d;
+	text-decoration: none;
+}
+
+article a h2:hover{
+	color:white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+article h2 {
+	padding: 32px 8px;
+	background-color: white;
+	border-radius: 20px;
+	text-align: center;
+	transition: 500ms;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 5px 0 gray;
+}
+
+article h2:hover {
+	background-color: #2d2d2d;
+	border-radius: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	transition: 500ms;
+	box-shadow: -5px -5px 5px 0 gray;
+}
+
+.calculator {
+	clear: both;
+	padding: 20px 0;
+}
+
+.calculator-title {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #2d2d2d;
+	text-transform: uppercase;
+}
+
+.line-mf {
+	width: 40px;
+	height: 5px;
+	background-color: #2d2d2d;
+	margin: 0 auto;
+}
+
+.calculator-app {
+	width: 400px;
+	margin: 20px auto;
+	padding: 16px;
+	border-width: 12px;
+	border-style: solid;
+	border-color: #2d2d2d;
+	border-radius: 50px;
+	box-shadow: 5px 5px 5px 0 gray;
+	transition: 500ms;
+}
+
+.calculator-app:hover {
+	box-shadow: 15px 15px 10px 0 gray;
+	transition: 500ms;
+}
+
+.flex-container-column {
+	display: flex;
+	/* properti pendukung */
+	flex-direction: column;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.flex-container-row {
+	display: flex;
+}
+
+.resultDisplay {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 28px;
+	color: #2d2d2d;
+	padding: 10px 20px;
+}
+
+.button {
+	font-family: 'Chelsea Market', cursive;
+	flex-basis: 25%;
+	/* properti pendukung */
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin: 5px;
+	background: #2d2d2d;
+	border: 5px solid #2d2d2d;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: 500ms;
+	box-sizing: border-box;
+}
+
+.button:hover {
+	box-shadow: 0 0 5px 5px gray;
+	transition: 500ms;
+}
+
+.button:active {
+	color: #3d3d3d;
+	transition: 50ms;
+	border: 5px solid #2d2d2d;
+}
+
+.button-number {
+	font-family: 'Chelsea Market', cursive;
+	flex-basis: 25%;
+	/* properti pendukung */
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin: 5px;
+	background: #4d4d4d;
+	border: 5px solid #2d2d2d;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: 500ms;
+	box-sizing: border-box;
+}
+
+.button-number:hover {
+	box-shadow: 0 0 5px 5px gray;
+	transition: 500ms;
+}
+
+.button-number:active {
+	color: #3d3d3d;
+	transition: 50ms;
+	border: 5px solid #2d2d2d;
+}
+
+td {
+	text-align: center;
+	padding: 0 26px;
+}
+
+.card {
+	font-family: 'Chelsea Market', cursive;
+	color: white;
+	padding: 20px;
+	margin: 20px 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 25px;
+	background: #4d4d4d;
+	border: 5px solid #2d2d2d;
+	transition: 500ms;
+	overflow: auto;
+}
+
+.clear-his {
+	font-family: 'Comfortaa', cursive;
+	width: 192px;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	margin: auto;
+	background: #2d2d2d;
+	border: 5px solid #2d2d2d;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: 500ms;
+	box-sizing: border-box;
+}
+
+.clear-his:hover {
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.clear-his:active {
+	color: #3d3d3d;
+}
+
+footer {
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	padding: 8px;
+	background-color: #2d2d2d;
+	text-align: center;
+}
+
+@media screen and (max-width: 1416px) {
+	aside {
+		 width: 50%;
+	}
+
+	article {
+		width: 50%
+	}
+}
+
+@media screen and (max-width: 1076px) {
+	main {
+		padding: 20px 40px;
+	}
+
+	aside {
+		 width: 40%;
+	}
+
+	article {
+		width: 60%
+	}
+}
+
+@media screen and (max-width: 990px) {
+	main {
+		padding: 20px 40px;
+	}
+
+	aside {
+		 width: 50%;
+	}
+
+	article {
+		width: 50%
+	}
+}
+
+@media screen and (max-width: 814px) {
+	main {
+		padding: 20px 40px;
+	}
+
+	aside {
+		margin-top: 64px;
+		width: 100%;
+		clear: both;
+	}
+
+	article {
+		padding: 0;
+		width: 100%;
+		clear: both;
+	}
+}
+
+@media screen and (max-width: 546px) {
+	.calculator-app {
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 546px) {
+	.calculator-app {
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	nav {
+		padding: 16px 4px;
+	}
+
+	nav img {
+		display: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.intro {
+		font-size: 20px;
+	}
+
+	.calculator-app {
+		width: 200px;
+	}
+
+	.resultDisplay {
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 18px;
+		color: #2d2d2d;
+		padding: 10px 20px;
+	}
+
+	.button {
+		font-family: 'Chelsea Market', cursive;
+		flex-basis: 25%;
+		/* properti pendukung */
+		color: white;
+		text-align: center;
+		padding: 5px;
+		margin: 3px;
+	}
+
+	.button-number {
+		font-family: 'Chelsea Market', cursive;
+		flex-basis: 25%;
+		/* properti pendukung */
+		color: white;
+		text-align: center;
+		padding: 5px;
+		margin: 3px;
+	}
+}
